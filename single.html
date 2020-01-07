@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="assets/css/style-single.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Crimson+Text&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Single</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+    </script>
+
+
+
+    <!-- <link rel="stylesheet" href="assets/css/mobile.css" /> -->
+    <!-- <link rel="stylesheet" media="screen and (max-width: 576px)" href="assets/css/mobile.css" type="text/css" /> -->
+</head>
+
+<body>
+
+    <div class="container-fluid">
+        <!-- Header -->
+        <header class="row">
+            <div class="col-md-12 header-justsa">
+                <div class="dropdown">
+                    <!-- Menu hamburger -->
+                    <button type="button" class="btn btn-hamb" data-toggle="dropdown" id="dropdownMenuButton">
+                        <span class="glyphicon glyphicon-menu-hamburger"></span>
+                        <span class="foo">Foodog</span>
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                        <a class="dropdown-item" href="#">Nutrition</a>
+                        <a class="dropdown-item" href="#">Lifestyle</a>
+                        <a class="dropdown-item" href="#">Wellness</a>
+                        <a class="dropdown-item" href="#">Community</a>
+                    </div>
+                </div>
+                <!-- Abonnement via email -->
+                <div id="subscriptiondigest">
+                    <div class="input-group mb-3">
+                        <div class="input-group-append">
+                            <label class="labeldigest" for="email">Digest In Your Inbox </label>
+                            <input type="email" class="rounded-0" placeholder="Your email">
+                            <button id="btnSignUP" class="btn btn-dark rounded-0" type="button">Sign up</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Chercher sur le site -->
+                <div class="search">
+                    <img id="logotfd-search" src="assets/img/logo-tfd.png" alt="logo" class="image-fluid">
+                    <button type="button" class="btn border-0" data-toggle="modal" data-target="#infos"><span
+                            class="glyphicon glyphicon-search"></span></button>
+                    <div class="modal" id="infos">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <input type="search" placeholder="Entrez un mot-clef" name="the_search">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- Main -->
+        <main class="row">
+            <div class="col-md-5 offset-md-2 col-sm-8">
+
+                <!-- Debut Article -->
+
+
+                <section class="first">
+
+                    <article>
+                        <h6>
+                            Nutrition
+                        </h6>
+                        <h1>THE 11 DOG FOOD LABEL TRICKS EVERY OWNER <br />NEEDS TO KNOW</h1>
+                        <img class="img-fluid" alt="Dog-black" title="Chien noir" src="assets/img/dog_black_1.jpg" />
+
+
+                        <div class="row">
+
+                            <div class="col-md-5 col-sm-3  col-3 d-flex align-items-center">
+
+                                <img class="logo-tfd img-fluid"
+                                    src="https://media.licdn.com/dms/image/C560BAQF-VJeUHqV6Rg/company-logo_200_200/0?e=2159024400&v=beta&t=2jyIAxjd1tVfp6vHPVCWmF0Xv6C_xTxwU3R1chveDa8"
+                                    alt="The farmer's dog logo" title="Farmer's dog logo" />
+                                <p class="ligne-inside-article">by: The FARMER's DOG ! </p>
+                            </div>
+                            <div class="col-md-7 col-sm-9 col-9 text-right d-flex justify-content-around">
+                                <p>SHARE</p>
+                                <button type="button" class="btn btn-dark d-flex justify-content-around"><i
+                                        class="fa fa-comment"></i>
+                                    Comment</button>
+                                <button class="btn-circle facebook"><i class="fa fa-facebook "></i></button>
+                                <button class="btn-circle twitter"><i class="fa fa-twitter "></i></button>
+                                <button class="btn-circle pinterest"><i class="fa fa-pinterest "></i></button>
+
+
+                            </div>
+
+
+                        </div>
+                        <p class="crimson">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Repudiandae similique eum cum tempore esse velit nostrum,
+                            possimus enim nam deleniti eius consequuntur illo ducimus hic
+                            id reprehenderit fugiat ullam illum? ieje
+                        </p>
+                        <p class="crimson">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Repudiandae similique eum cum tempore esse velit nostrum,
+                            possimus enim nam deleniti eius consequuntur illo ducimus hic
+                            id reprehenderit fugiat ullam illum? ieje
+                            possimus enim nam deleniti eius consequuntur illo ducimus hic
+                            id reprehenderit fugiat ullam illum? ieje
+                        </p>
+                        <p class="crimson">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+
+                        </p>
+                        <h3>First ingredient</h3>
+                        <p class="crimson">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Repudiandae similique eum cum tempore esse velit nostrum,
+                            possimus enim nam deleniti eius consequuntur illo ducimus hic
+                            id reprehenderit fugiat ullam illum? ieje
+                            possimus enim nam deleniti eius consequuntur illo ducimus hic
+                            id reprehenderit fugiat ullam illum? iejeillo ducimus hic
+                            id reprehenderit fugiat ullam illum? iejefugiat ullam illum? iejeullam illum? iejefugiat
+                            ullam illum? ieje
+                        </p>
+                        <h3>Gourmet</h3>
+                        <p class="crimson">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Repudiandae similique ullam illum? iejefugiat ullam illum? iejeullam illum? iejefugiat ullam
+                            illum? ieje
+
+                        </p>
+                        <h3>Grain-free</h3>
+                        <p class="crimson">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Repudiandae similique eum cum tempore esse velit nostrum,
+                            possimus enim nam deleniti eius consequuntur illo ducimus hic
+                            id reprehenderit fugiat ullam illum? iejeullam illum? iejefugiat ullam illum? iejeullam
+                            illum? iejefugiat ullam illum? ieje
+                        </p>
+                        <h3>Cage-free and/or Free-range</h3>
+                        <p class="crimson">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Repudiandae similique eum cum tempore esse velit nostrum,
+                            possimus enim nam deleniti eius consequuntur illo ducimus hic
+                            id reprehenderit fugiat ullam illum? ieje ullam illum? iejefugiat ullam illum? ieje ullam
+                            illum? iejefugiat
+                        </p>
+                        <h3>Grass-fed</h3>
+                        <p class="crimson">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Repudiandae similique eum cum tempore esse velit nostrum,
+                            possimus enim nam deleniti eius consequuntur illo ducimus hic
+                            id reprehenderit fugiat ullam illum? ieje ullam illum? iejefugiat ullam illum? ieje
+                            ullam illum? iejefugiat ullam illum? iejeullam illum? iejefugiat ullam illum? ieje ullam
+                            illum?
+                        </p>
+                        <p class="crimson">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                            Repudiandae similique eum cum tempore esse velit nostrum,
+                            possimus enim nam deleniti eius consequuntur illo ducimus hic
+                            id reprehenderit fugiat ullam illum? ieje ullam illum?
+                            ullam illum?
+                        </p>
+                        <p class="crimson italic">
+                            Image:@Jenikrauze
+                        </p>
+                        <!-- Liens Partage -->
+                        <footer id="footer-article" class="row">
+                            <div class="col-md-12 d-flex justify-content-around">
+                                <p>SHARE</p>
+                                <button type="button" class="btn btn-secondary btn-dark btn-sm"> <i
+                                        class="fa fa-comment"></i> 0 Comment</button>
+                                <button type="button" class="btn btn-secondary facebook btn-sm"> <i
+                                        class="fa fa-facebook "></i> Share</button>
+                                <button type="button" class="btn btn-secondary twitter btn-sm"> <i
+                                        class="fa fa-twitter "></i>Tweet</button>
+                                <button type="button" class="btn btn-secondary  pinterest btn-sm"><i
+                                        class="fa fa-pinterest "></i> Pin it</button>
+
+                            </div>
+                        </footer>
+                    </article>
+                </section>
+
+                <!-- </section> -->
+                <!--  Fin article -->
+                <!-- </div> -->
+                <!--  Subscribe Newletters -->
+
+                <!-- <section> -->
+                <section class="second">
+                    <div class="row">
+                        <div class="col-md-12 subscrnewlett">
+                            <h2>Subscribe to The Digest Newletter</h2>
+                            <p>Get health and wellness tips about about your dog delivered to your indox.</p>
+                            <div class="input-group mb-3">
+                                <div class="input-group-append mx-auto formorange">
+                                    <input type="email" class="rounded-0" placeholder="Your email">
+                                    <button id="btnSignUporange" class="btn rounded-0" type="button">Sign
+                                        up</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!--  </section> -->
+                <!-- Article précédent -->
+                <!-- <section> -->
+                <section class="third">
+                    <div class="row d-flex flex-nowrap">
+                        <div class="col-md-6 ">
+                            <div class="left-side">
+                                <a href="#">
+                                    <p class="previous"> <i class="fa fa-angle-left"></i>Previous Article</p>
+                                </a>
+                                <p class="title">SUPERFOODS IN YOUR KITCHEN:<br />PUMPKINS FOR DOGS</p>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                        </div>
+                    </div>
+                </section>
+                <!--  </section> -->
+                <!-- Farmer's DOG  -->
+                <!-- <section> -->
+                <section class="fourth">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <img alt="logo" src="assets/img/logo-tfd.png" />
+                            <h4>The farmer's Dog</h4>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+                                ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                                ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+                                reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                        </div>
+                    </div>
+                </section>
+                <!-- </section> -->
+                <!-- Liens articles -->
+                <!-- <section> -->
+                <section class="fifth">
+
+                    <h5>
+                        YOU MIGHT ALSO LIKE
+
+                    </h5>
+
+
+
+                    <div class="row">
+                        <div class="col-md-4">
+                            <img class="img-fluid" alt="Bootstrap Image Preview" src="assets/img/pumpkin.jpeg" />
+                            <h3>
+                                SUPERFOODS IN YOUR KITCHEN: PUMPKINS FOR DOGS
+                            </h3>
+                        </div>
+                        <div class="col-md-4">
+                            <img class="img-fluid" alt="Bootstrap Image Preview" src="assets/img/tablescraps.jpg" />
+                            <h3>
+                                THE TRUTH ABOUT TABLE SCRAPS FOR DOGS
+                            </h3>
+                        </div>
+                        <div class="col-md-4">
+                            <img class="img-fluid" alt="Bootstrap Image Preview"
+                                src="assets/img/apple-cider-vinegar.jpg" />
+                            <h3>
+                                SUPERFOODS IN YOUR KITCHEN: APPLE CIDER VINEGAR FOR DOGS
+                            </h3>
+                        </div>
+                    </div>
+
+                </section>
+                <!-- </section> -->
+                <!--  Formulaire commentaire -->
+                <section class="six">
+                    <h3>
+                        LEAVE A RESPONSE
+                    </h3>
+                    <form role="form">
+                        <div class="form-group formcomment">
+                            <textarea class="form-control rounded-0" id="textareacomment"
+                                placeholder="Write your comment here..." rows="5"></textarea>
+                            <div class="formoneline">
+                                <input type="name" class="form-control rounded-0" id="name" placeholder="Name..." />
+                                <input type="email" class="form-control rounded-0" placeholder="Email..." />
+                                <input type="text" class="form-control rounded-0" id="website" placeholder="Website" />
+                            </div>
+                        </div>
+                        <button type="submit" class="btn rounded-0 btnComment">
+                            Leave a comment
+                        </button>
+                    </form>
+                </section>
+            </div>
+            <!-- DEBUT ASIDE -->
+            <div class="col-md-2 col-sm-4">
+                <section class="seventh">
+                    <aside>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <p>FOLLOW US</p>
+                                <div class="follow">
+                                    <button class="btn-circle facebook"><i class="fa fa-facebook "></i></button>
+                                    <button class="btn-circle twitter"><i class="fa fa-twitter "></i></button>
+                                    <button class="btn-circle pinterest"><i class="fa fa-pinterest "></i></button>
+                                    <button class="btn-circle pinterest"><i class="fa fa-instagram"></i></button>
+                                </div>
+
+
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-12 ads">
+
+                                <img class="img-fluid" alt="pub The farmer's dog" src="assets/img/ad.png">
+                            </div>
+                        </div>
+                    </aside>
+                </section>
+            </div>
+
+
+
+
+
+            <!-- FIN DE LA SECTION 7 -->
+            <!--             <div class="col-md-3">
+            </div> -->
+        </main>
+    </div>
+
+
+</body>
+
+</html>

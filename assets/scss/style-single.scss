@@ -1,0 +1,526 @@
+$font1: "Open Sans", sans-serif;
+$font2: "Crimson Text", serif;
+$cnt: center;
+
+/* Variable index.html*/
+
+$main-font: "Crimson Text", serif;
+$title-font: "Open Sans", sans-serif;
+$dark-font: #444444;
+$grey-font: #777171;
+$light-font: #d6d1d1;
+$orange-font: #f99639;
+$white-font: #fff;
+
+@mixin font($font) {
+  font-family: $font;
+}
+
+.facebook {
+  background: #3b5998;
+  color: white;
+
+  &:hover {
+    background: rgba($color: #3b5998, $alpha: 0.8);
+  }
+}
+
+.twitter {
+  background: #55acee;
+  color: white;
+
+  &:hover {
+    background: rgba($color: #55acee, $alpha: 0.8);
+  }
+}
+
+.pinterest {
+  background: #cb2027;
+  color: white;
+
+  &:hover {
+    background: rgba($color: #cb2027, $alpha: 0.8);
+  }
+}
+
+.italic {
+  font-style: italic;
+}
+
+/* ------------------- DEBUT CSS SECTION FIRST--ARTICLE  ------------------- */
+
+section.first {
+  article {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+
+    h6 {
+      @include font($font1);
+      color: red;
+      font-size: 13px;
+      text-align: $cnt;
+    }
+
+    h1 {
+      @include font($font1);
+      color: black;
+      text-align: $cnt;
+      font-size: 17px;
+    }
+
+    h3 {
+      @include font($font1);
+      font-size: 16px;
+
+      font-weight: bolder;
+    }
+
+    img {
+      width: 80%;
+      margin: auto;
+    }
+
+    div.row {
+      flex-direction: row;
+      align-content: center;
+      justify-content: $cnt;
+      border-top: 1px solid rgb(202, 202, 202);
+      border-bottom: 1px solid rgb(202, 202, 202);
+      margin-top: 1%;
+      margin-bottom: 1%;
+
+      div.col-md-5 {
+        margin-top: 0.5%;
+        margin-bottom: 0.5%;
+
+        img.logo-tfd {
+          height: 30px;
+          width: 30px;
+          margin: 0;
+        }
+
+        p.ligne-inside-article {
+          font-size: 8px;
+
+          @include font($font1);
+          margin: auto;
+          margin-left: 3%;
+          color: gray;
+        }
+      }
+
+      div.col-md-7 {
+        p {
+          margin: auto;
+          margin-right: 3%;
+          font-size: 10px;
+        }
+
+        .fa-comment {
+          margin-right: 14%;
+          font-size: 14px;
+        }
+
+        .btn-dark {
+          margin: auto;
+          padding: 0%;
+          padding-left: 8%;
+          padding-right: 8%;
+          font-size: 10px;
+          height: 20px;
+        }
+
+        .btn-circle {
+          margin: auto;
+          width: 20px;
+          height: 20px;
+          text-align: center;
+          padding: 1px 0;
+          font-size: 10px;
+          line-height: 1.428571429;
+          border-radius: 50%;
+          border: 2px solid rgba(0, 0, 0, 0);
+        }
+      }
+    }
+
+    .col-md-12 {
+      padding: 0;
+    }
+
+    p.crimson {
+      @include font($font2);
+      font-size: 12px;
+    }
+
+    #footer-article {
+      font-size: 10px;
+      text-align: center;
+      justify-content: center;
+      margin-bottom: 4%;
+
+      .facebook {
+        background: #3b5998;
+        color: white;
+
+        &:hover {
+          background: rgba($color: #3b5998, $alpha: 0.8);
+        }
+      }
+
+      .twitter {
+        background: #55acee;
+        color: white;
+
+        &:hover {
+          background: rgba($color: #55acee, $alpha: 0.8);
+        }
+      }
+
+      .pinterest {
+        background: #cb2027;
+        color: white;
+
+        &:hover {
+          background: rgba($color: #cb2027, $alpha: 0.8);
+        }
+      }
+
+      p {
+        margin: auto;
+        margin-left: 0%;
+        margin-right: 0%;
+      }
+
+      button {
+        font-size: 10px;
+        width: 21%;
+        border: 0px solid black;
+      }
+    }
+  }
+}
+
+/* ------------------- FIN CSS SECTION FIRST--ARTICLE  ------------------- */
+
+/* ------------------- DEBUT CSS SECTION THIRST--ARTICLE-PRECEDENT  ------------------- */
+
+section.third {
+  .col-md-6 {
+    border-top: 1px solid rgb(206, 206, 206);
+    border-bottom: 1px solid rgb(206, 206, 206);
+    padding-left: 0.5%;
+    margin-bottom: 2%;
+
+    .left-side {
+      border-right: 1px solid rgb(206, 206, 206);
+
+      margin-top: 10%;
+      margin-bottom: 10%;
+
+      .previous {
+        color: gray;
+        font-size: 8px;
+        @include font($font2);
+
+        .fa-angle-left {
+          margin-right: 5%;
+        }
+      }
+
+      .title {
+        font-size: 10px;
+        font-weight: bolder;
+        @include font($font2);
+      }
+    }
+  }
+}
+
+/* ------------------- FIN CSS SECTION THIRST--ARTICLE-PRECEDENT  ------------------- */
+/* ------------------- DEBUT CSS SECTION FIFTH--LIENS-ARTICLE  ------------------- */
+
+section.fifth {
+  .col-md-4 {
+    display: flex;
+    flex-direction: column;
+  }
+  img {
+    height: 120px;
+    width: 120px;
+    margin: auto;
+  }
+
+  h5 {
+    display: table;
+    white-space: nowrap;
+    text-align: center;
+    font-size: 12px;
+    font-weight: bolder;
+  }
+
+  h5:after {
+    content: "";
+    display: table-cell;
+    width: 100%;
+    background: url(data:image/gif;base64,R0lGODlhAQABAIAAAAUEBAAAACwAAAAAAQABAAACAkQBADs=)
+      repeat-x left center;
+    opacity: 0.1;
+  }
+
+  h3 {
+    font-size: 12px;
+    font-weight: bolder;
+    text-align: center;
+  }
+}
+
+/* ------------------- FIN CSS SECTION FIFTH--LIENS-ARTICLE  ------------------- */
+
+/* ------------------- DEBUT CSS SECTION SEVENTH--ASIDE  ------------------- */
+section.seventh {
+  aside {
+    div.row {
+      div.col-md-12 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        p {
+          margin-top: 30%;
+          text-align: center;
+          @include font($font1);
+          color: rgb(114, 114, 114);
+        }
+
+        img {
+          margin-top: 10%;
+        }
+
+        div.follow {
+          width: max-content;
+          margin: auto;
+
+          .fa {
+            color: white;
+            padding: 0;
+            font-size: 20px;
+            width: 30px;
+            text-align: center;
+            text-decoration: none;
+            border-radius: 50%;
+          }
+
+          .btn-circle {
+            margin: auto;
+            width: 30px;
+            height: 30px;
+            text-align: center;
+            padding: 1px 0;
+            font-size: 10px;
+            line-height: 1.428571429;
+            border-radius: 50%;
+            background: rgb(66, 66, 66);
+            border: none;
+          }
+        }
+      }
+    }
+  }
+
+  /* ----------------------------  FIN ISMA ----------------------------  */
+}
+
+$greybord: 1px solid rgb(224, 224, 224);
+$OpenS: "Open Sans", sans-serif;
+$Crimson: "Crimson Text", serif;
+
+@mixin blackBtn {
+  text-transform: uppercase;
+  font-size: 9px;
+  font-weight: bold;
+  background-color: black;
+  color: white;
+}
+
+@mixin plHold {
+  opacity: 1;
+  font-size: 9px;
+  color: rgb(121, 121, 121);
+}
+
+/* Header */
+
+header {
+  border-bottom: $greybord;
+  padding-bottom: 5px;
+
+  div {
+    &.header-justsa {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    #dropdownMenuButton {
+      display: flex;
+      font-size: 18px;
+
+      .foo {
+        display: inline;
+        font-family: $Crimson;
+        font-size: 22px;
+        line-height: 80%;
+        padding-left: 10px;
+      }
+    }
+
+    #subscriptiondigest {
+      display: flex;
+      flex-wrap: nowrap;
+      font-family: $OpenS;
+      align-items: center;
+
+      .input-group-append {
+        height: 20px;
+      }
+
+      label {
+        font-weight: 300;
+        padding: 2px;
+        margin-right: 5px;
+        font-size: 9px;
+      }
+
+      input {
+        text-transform: uppercase;
+        font-size: 9px;
+        font-weight: 300;
+        padding-left: 10px;
+        border: 1px solid black;
+      }
+
+      #btnSignUP {
+        @include blackBtn();
+        padding: 0 10px 0 10px;
+      }
+    }
+
+    .search {
+      img#logotfd-search {
+        max-width: 40px;
+        height: 40px;
+      }
+    }
+  }
+}
+
+/* Section seux : Abonnement newsletter */
+.subscrnewlett {
+  font-family: $OpenS;
+  text-align: center;
+  font-size: 12px;
+
+  h2 {
+    font-size: 22px;
+    font-weight: bold;
+    margin-top: 6%;
+  }
+
+  .formorange {
+    display: flex;
+    justify-content: center;
+    font-family: $OpenS;
+
+    input {
+      border: $greybord;
+      width: 50%;
+      padding-left: 10px;
+
+      &::placeholder {
+        @include plHold();
+      }
+    }
+
+    button#btnSignUporange {
+      background-color: #ff8069;
+      color: white;
+      text-transform: uppercase;
+      font-weight: 900;
+      font-size: 9px;
+      width: 20%;
+    }
+  }
+}
+
+/* Section quatre : The farmer's dog */
+section.fourth {
+  font-family: $OpenS;
+
+  img {
+    width: 70px;
+    height: 70px;
+    float: left;
+    margin: 15px 15px 30px 0;
+  }
+
+  h4 {
+    font-weight: bolder;
+    font-size: 12px;
+  }
+
+  p {
+    font-size: 12px;
+    color: rgb(175, 175, 175);
+  }
+}
+
+/* Section six : Leave a comment */
+section.six {
+  margin-bottom: 50px;
+
+  h3 {
+    font-family: $OpenS;
+    font-weight: bolder;
+    font-size: 14px;
+    margin-bottom: 30px;
+    padding-top: 40px;
+    border-top: $greybord;
+  }
+
+  form {
+    .formcomment {
+      display: flex;
+      flex-direction: column;
+      font-family: $OpenS;
+
+      #textareacomment {
+        margin-bottom: 20px;
+        border: $greybord;
+
+        &::placeholder {
+          @include plHold;
+        }
+      }
+
+      .formoneline {
+        display: flex;
+        justify-content: space-between;
+
+        input {
+          width: 32%;
+          border: $greybord;
+
+          &::placeholder {
+            @include plHold;
+          }
+        }
+      }
+    }
+
+    .btnComment {
+      @include blackBtn;
+    }
+  }
+}
