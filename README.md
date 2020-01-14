@@ -5,9 +5,13 @@
 
 Description
 ----
-Simple static web page
+Simple responsive static web page done two weeks after starting coding. 
 
 Technologies
 ----
 *HTML*, *SASS*, *BOOTSTRAP* 
+
+Project Link
+----
+https://rflowturing.github.io/FooDog/
 
